@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343434"
+    tools:context=".InfoPage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-67dp">
+
+        <LinearLayout
+            android:id="@+id/Lineair_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="0dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/imc"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Age"
+                android:padding="15dp"
+                android:textColorHint=" #ffffff" />
+
+            <EditText
+                android:id="@+id/poid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Poid (Kg)"
+                android:padding="15dp"
+                android:textColorHint=" #ffffff"
+
+                />
+
+            <EditText
+                android:id="@+id/taille"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Taille (Cm)"
+                android:padding="15dp"
+                android:textColorHint=" #ffffff"
+
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="394dp"
+                android:layout_height="62dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="101dp"
+                    android:layout_weight="1"
+                    android:padding="30dp"
+                    android:text="Genre"
+                    android:textColor=" #ffffff" />
+
+                <RadioButton
+                    android:id="@+id/homme"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Homme"
+                    android:textColor=" #ffffff" />
+
+                <RadioButton
+                    android:id="@+id/femme"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Femme"
+                    android:textColor=" #ffffff" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="32dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="16dp"
+                android:text="Submit"
+                android:textColor="#343434"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
